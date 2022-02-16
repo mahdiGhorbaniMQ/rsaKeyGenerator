@@ -1,0 +1,11 @@
+<button (click)="onClick()" *ngIf="status == states.task" mat-raised-button color="accent">{{states.task}}</button>
+
+<div *ngIf="status == states.loading" class="coulmn-flex">
+    <mat-spinner color="accent" diameter="40"></mat-spinner>
+    <span style="padding-top: 15px;">is {{states.loading}}...</span>
+</div> 
+
+<div *ngIf="status == states.done" style="position: relative;left: 15px;">
+    <span style="position:relative;bottom: 2px;">{{states.done}} </span>
+    <mat-icon color="accent">done</mat-icon>
+</div>

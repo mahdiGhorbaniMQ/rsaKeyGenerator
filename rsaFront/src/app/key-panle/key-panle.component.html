@@ -1,0 +1,27 @@
+<mat-card>
+  <mat-card-content *ngIf="userKeyStatus == 'noKey'">
+    <div>
+      <h1>
+         <b>You have not any key</b>
+      </h1>
+      <p>
+        press generate button and then we generate a unique rsaKey for you and send your privateKey in your email addres.
+      </p>
+    </div>
+    <br>
+    <app-request-button [states]="generateStates" [status]="generateStatus" (onClick)="generate()"></app-request-button>
+  </mat-card-content>
+
+  <mat-card-content *ngIf="userKeyStatus == 'hasKey'">
+    <div>
+      <h1>
+         <b>You have your rsaKey</b>
+      </h1>
+      <p>
+        you can use your key and encrypt files but if you lost your key or want to change your key press the change button.
+      </p>
+    </div>
+    <br>
+    <app-request-button [states]="changeStates" [status]="changeStatus" (onClick)="change()"></app-request-button>
+  </mat-card-content>
+</mat-card>

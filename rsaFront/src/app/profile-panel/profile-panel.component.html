@@ -1,0 +1,27 @@
+<mat-card>
+  <mat-card-content>
+    <div>
+      <h1>
+        <strong>your profile</strong>
+      </h1>
+      <br>
+      <p>
+        <strong>firstName: </strong><span>{{user!.firstName}}</span>
+      </p>
+      <p>
+        <strong>lastName: </strong><span>{{user!.lastName}}</span>
+      </p>
+      <p>
+        <strong>email: </strong><span>{{user!.email}}</span>
+      </p>
+      <p>
+        <strong>username: </strong><span>{{user!.username}}</span>
+      </p>
+      <br><hr><br>
+      <p>are you want to update your profile info?</p>
+      <br>
+      <button (click)="goToUpdatePanel()" mat-raised-button color="accent">updating</button>
+    </div>
+    <br>
+  </mat-card-content>
+</mat-card>
