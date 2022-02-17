@@ -1,5 +1,5 @@
 # rsaKeyGenerator
-this is a fullstack project with spring and angular
+this is a fullstack project using spring and angular
 
 you can signup in this web site and verify your account with a token that receive it in your email,
 then you can generate your rsa key in web and receive public key in your email,
